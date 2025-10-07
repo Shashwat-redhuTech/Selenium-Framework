@@ -55,7 +55,6 @@ public class tc_002 extends BaseTest {
 	        
 	       Assert.assertTrue(orderHistoryPage.verifyOrderDisplay(itemsToAdd));
 	     
-	    
 	}
 	
 	
