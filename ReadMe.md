@@ -108,15 +108,3 @@ This project is open source and available under the MIT License
 
 ---
 
-### ✅ Next Steps
-1. In VS Code, right-click your project root → **New File → `README.md`**  
-2. Paste the above content.  
-3. Save it (`Ctrl + S`).  
-4. Commit and push:
-   ```bash
-   git add README.md
-   git commit -m "Added project README"
-   git push
-
-
-Your GitHub repo will now show a nice professional README as its front page 🎯
