@@ -1,9 +1,3 @@
-ChatGPT said:
-
-Perfect 👍 Here’s a clean, professional, and beginner-friendly README.md you can copy directly into your project root.
-(It’s generic but well-structured — ideal for your Selenium Framework setup on Java, TestNG, and Maven.)
-
-🧾 README.md
 # 🧪 Selenium Automation Framework
 
 A **Java-based Selenium Automation Framework** built using **TestNG**, **Maven**, and the **Page Object Model (POM)** design pattern.  
