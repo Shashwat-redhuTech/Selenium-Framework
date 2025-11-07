@@ -74,6 +74,7 @@ public class productCat extends AbstractComponents {
      * Yeh method Cart button par click karega
      * @return 
      */
+    
     public CartPage goToCart() {
     waitForElementToDisappear(spinner);
       waitForElementtoBeClickable(cartButton);

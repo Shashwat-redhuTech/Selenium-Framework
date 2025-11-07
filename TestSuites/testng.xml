@@ -18,7 +18,13 @@
     <classes>
     <class name="appTest.tc_002"/>
    </classes>
-  </test> 
+  </test>
+  
+      <test thread-count="5" name="tc_003">
+    <classes>
+    <class name="appTest.tc_003"/>
+   </classes>
+  </test>  
   
   
   <!-- Test -->

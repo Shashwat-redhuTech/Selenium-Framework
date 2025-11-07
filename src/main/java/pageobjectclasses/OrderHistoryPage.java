@@ -27,6 +27,9 @@ public class OrderHistoryPage extends AbstractComponents {
     // locator for the Name column cells (adjust index if your Name column is different)
     @FindBy(xpath = "//table//tbody//tr/td[2]")
     private List<WebElement> orderNames;
+    
+    @FindBy(xpath = "//div[@class='mt-4 ng-star-inserted']")
+    private WebElement noOrdersMessage;
 
     /**
      * Returns the visible order names from the table as trimmed strings.
@@ -54,7 +57,7 @@ public class OrderHistoryPage extends AbstractComponents {
      */
     public boolean verifyOrderDisplay(List<String> itemsToAdd) {
         List<String> present = getOrderNamesText();
-
+   
         for (String expected : itemsToAdd) {
             String exp = expected == null ? "" : expected.trim();
             boolean found = present.stream().anyMatch(actual -> actual.equalsIgnoreCase(exp));
@@ -66,6 +69,11 @@ public class OrderHistoryPage extends AbstractComponents {
         }
         return true;
     }
+    
+    public String youHaveNoOrders() {
+      waitForWebElementToAppear(noOrdersMessage);
+      return noOrdersMessage.getText();
+	}
 }
 
 

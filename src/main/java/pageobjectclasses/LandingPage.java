@@ -30,7 +30,7 @@ public class LandingPage extends AbstractComponents {
     
 	 
 	 
-	 // login
+	    // login
         @FindBy(id="userEmail")
 	  private  WebElement userEmail;
 
@@ -53,8 +53,7 @@ public class LandingPage extends AbstractComponents {
 	   
 	    public void goTo() {
 	    	driver.get("https://rahulshettyacademy.com/client");
-	    	
-	    }
+	       }
 	    
 	    public String getErrorMessage() {
 	    	waitForWebElementToAppear(errorMessage);
